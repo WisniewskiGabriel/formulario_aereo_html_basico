@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML básico, ag. de viagens</title>
+    <link rel="stylesheet" href="reserva.css">
 </head>
 <body>
     <fieldset>
+        <legend>
+            <h1>COMPRE SUA VIAGEM</h1>
+        </legend>
         <section>
-            <legend>
-                <h1>COMPRE SUA VIAGEM</h1>
-            </legend>
             <article>
                 <label for="person_name"><h3>Nome</h3></label>
                 <input type="person_name">
@@ -46,6 +47,12 @@
                 <input type="checkbox" id="servico_aluguel_veiculos" name="servico_aluguel_veiculos" value="Aluguel de Veículos">
                 <label for="servico_aluguel_veiculos">Aluguel de Veículos</label><br>
             </article>
+            <footer>
+                <br>
+                <button type="submit">
+                    <h3>Enviar</h3>
+                </button>
+            </footer>
         </section>
     </fieldset>
 </body>
