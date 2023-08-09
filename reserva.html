@@ -8,15 +8,45 @@
 </head>
 <body>
     <fieldset>
-        <legend><h1>COMPRE SUA VIAGEM</h1></legend>
-        <label for="select-services"><h3>Serviços Desejados</h3>
-            <select name="services" id="select-services">
-                <option value="val_default"><p>Selecione uma opção</p></option>
-                <option value="val_compra_de_passagem"><p>Compra de Passagens</p></option>
-                <option value="val_reserva_de_hospedagem"><p>Reserva de Hospedagem</p></option>
-                <option value="val_aluguel_de_veiculos"><p>Aluguel de Veículos</p></option>
-            </select>
-        </label>
+        <section>
+            <legend>
+                <h1>COMPRE SUA VIAGEM</h1>
+            </legend>
+            <article>
+                <label for="person_name"><h3>Nome</h3></label>
+                <input type="person_name">
+                <label for="person_mail"><h3>E-mail</h3></label>
+                <input type="person_mail">
+            </article>
+            <article>
+                <h3>Forma de Pagamento</h3>
+                <input type="radio" id="cartao_de_credito" name="payment_meth" value="Cartão de Crédito">
+                <label for="cartao_de_credito">Cartão de Crédito</label><br>
+                <input type="radio" id="boleto" name="payment_meth" value="Boleto">
+                <label for="boleto">Boleto</label><br>
+                <input type="radio" id="pix" name="payment_meth" value="PIX">
+                <label for="pix">PIX</label>
+            </article>
+            <article>
+                <label for="payment_meth"><h3>Prazo de Pagamento</h3>
+                    <select name="services" id="select-services">
+                        <option value="val_default"><p>Selecione uma opção</p></option>
+                        <option value="À Vista"><p>À Vista</p></option>
+                        <option value="5x Sem Juros"><p>5x Sem Juros</p></option>
+                        <option value="10x Com Juros"><p>10x Com Juros</p></option>
+                    </select>
+                </label>
+            </article>
+            <article>
+                <h3>Serviços Desejados</h3>
+                <input type="checkbox" id="servico_compra_passagens" name="servico_compra_passagens" value="Compra de Passagens">
+                <label for="vehicle1">Compra de Passagens</label><br>
+                <input type="checkbox" id="servico_reserva_hospedagem" name="servico_reserva_hospedagem" value="Reserva de Hospedagem">
+                <label for="servico_reserva_hospedagem">Reserva de Hospedagem</label><br>
+                <input type="checkbox" id="servico_aluguel_veiculos" name="servico_aluguel_veiculos" value="Aluguel de Veículos">
+                <label for="servico_aluguel_veiculos">Aluguel de Veículos</label><br>
+            </article>
+        </section>
     </fieldset>
 </body>
 </html>
